@@ -1,0 +1,184 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #fff8ed;
+            color: #3d1f14;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            padding: 14px 20px;
+            background-color: #4b171b;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px 18px;
+            border: 2px groove #d4af37;
+            border-radius: 30px;
+            color: #fff8ed;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #d4af37;
+            color: #3d1f14;
+        }
+
+        header {
+            padding: 35px 20px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #651e24;
+            font-family: "Caveat", cursive;
+            font-size: 48px;
+        }
+
+        #SANA {
+            margin: 8px 0;
+            font-family: "Caveat", cursive;
+            font-size: 32px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        #SANA:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin: 20px 0;
+            color: #651e24;
+            font-family: "Caveat", cursive;
+            font-size: 48px;
+            text-align: center;
+        }
+
+        .signature,
+        .drinks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            padding: 10px 24px 40px;
+        }
+
+        .dish-card,
+        .sana {
+            width: 260px;
+            padding: 12px;
+            border: 1px solid #d4af37;
+            border-radius: 18px;
+            background-color: #ffffff;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .dish-card:hover,
+        .sana:hover {
+            transform: translateY(-5px);
+        }
+
+        .dish-card img,
+        .sana img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            border-radius: 14px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .dish-card:hover img,
+        .sana:hover img {
+            transform: scale(1.02);
+        }
+
+        .dish-card h3,
+        .sana h3 {
+            margin: 12px 0 4px;
+            color: #651e24;
+            font-family: "Caveat", cursive;
+            font-size: 28px;
+        }
+
+        .Menu {
+            width: 100%;
+        }
+
+        .menu {
+            padding: 10px 24px 40px;
+        }
+
+        .menu article {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .sayma {
+            width: 48%;
+            padding: 10px;
+            border: 5px groove #6d161e;
+            border-radius: 30px;
+            background-color: #fff8ed;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            line-height: 1.3;
+        }
+
+        .sayma h3 {
+            margin: 8px 0 12px;
+            color: #651e24;
+            font-family: "Caveat", cursive;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .sayma ul {
+            margin: 0;
+            padding-left: 24px;
+        }
+
+        .sayma li {
+            margin-bottom: 4px;
+        }
+
+        footer {
+            padding: 22px 16px;
+            background-color: #4b171b;
+            color: #fff8ed;
+            text-align: center;
+            font-family: "Caveat", cursive;
+        }
+
+        footer h2 {
+            margin: 0 0 12px;
+            color: #d4af37;
+        }
+
+        footer p {
+            margin: 8px 0;
+            font-size: 22px;
+        }
+
+        footer a {
+            color: #d4af37;
+        }

@@ -45,6 +45,7 @@ function checkReservation() {
   let phone = document.getElementById("res-phone").value.trim();
   let guests = Number(document.getElementById("res-guests").value);
   let date = document.getElementById("res-date").value;
+  let time = document.getElementById("res-time").value;
   let message = document.getElementById("res-message");
 
   message.className = "error";
@@ -69,9 +70,19 @@ function checkReservation() {
     return false;
   }
 
+  if (time === "") {
+    message.textContent = "Please choose a time.";
+    return false;
+  }
+
+  if (time < "11:00" || time >= "23:00") {
+    message.textContent = "We are open 11:00 AM - 11:00 PM. Please choose a time in between.";
+    return false;
+  }
+
   message.className = "success";
   message.textContent =
-    "Thank you, " + name + "! Table for " + guests + " on " + date + " is booked. We will call you on " + phone + ".";
+    "Thank you, " + name + "! Table for " + guests + " on " + date + " at " + time + " is booked. We will call you on " + phone + ".";
   document.getElementById("reservation-form").reset();
   return false;
 }
